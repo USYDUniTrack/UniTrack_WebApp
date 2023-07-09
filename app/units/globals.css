@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.bgColorCardHr{
+  background-color: #DBC3BF !important;
+}
+
+
+/* UnitDescription css start */
+
+.UnitDescriptionWrapper {
+  width: 100%;
+  max-width: 825px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.BottomBorderLine {
+  background: #00000080;
+  float: left;
+  width: 100%;
+  margin: 10.5px 0px;
+  margin-bottom: 7px;
+}
+
+/* UnitDescription css end */
+
+/* NavigationBar css start */
+.NavigationBarWrapper {
+  border-radius: 15px;
+  background: rgba(221, 67, 43, 0.80);
+  padding: 25px;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.NavigationBarDetails {
+  padding: 4px;
+  color: #FFF;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+  text-align: left;
+  gap: 3px;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.cardHrGap{
+  margin: 23px 0px;
+}
+.widthCardHR{
+  width: 180px;
+}
+/* NavigationBar css end */
+
+/* layout css start */
+
+.HomePageWrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 56px;
+}
+
+.centerContentWrapper{
+  max-width: 729px;
+  position: absolute;
+  top: 120px;
+}
+
+.MuiButton-outlined {
+  border-color: black !important;
+  color: #DD432B !important;
+}
+
+.rightNavigationWrapper {
+  position: fixed;
+  top: 100px; /* Adjust the top value according to the height of your header */
+  right: 0;
+  width: 25%;
+  height: calc(100vh - 100px); /* Adjust the height value to consider the height of your header */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-right: 15px;
+}
