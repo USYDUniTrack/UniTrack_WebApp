@@ -6,8 +6,8 @@ import NavigationBar from './NavigationBar';
 import Reviews from './Reviews';
 import VerticalLinearStepper from './steps';
 import UnitOutline from './UnitOutline';
-import Timetable from './Timetable';
-import Tree from './Tree';
+// import Timetable from './Timetable';
+// import Tree from './Tree';
 
 export default function Page() {
   return (
@@ -19,8 +19,6 @@ export default function Page() {
         </div>
         <div className='centerContentWrapper'>
           <UnitDescription />
-          <Tree />
-          <Timetable />
           <UnitOutline />
           <Reviews />
         </div>
@@ -31,3 +29,4 @@ export default function Page() {
     </div>
   )
 }
+

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { BsFillCalendarEventFill, BsFillCalendar2Fill } from 'react-icons/bs';
 import { Button, Divider, Stack, Typography } from '@mui/material';

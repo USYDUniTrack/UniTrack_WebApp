@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Typography, Rating, Button, Stack, Box, Link } from '@mui/material';
 import RectangleIcon from '@mui/icons-material/Rectangle';
