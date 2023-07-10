@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 body {
   font-family: 'Inter', sans-serif;
@@ -32,13 +32,23 @@ body {
 /* UnitDescription css end */
 
 /* NavigationBar css start */
-.NavigationBarWrapper {
+.NavigationBar {
   border-radius: 15px;
   background: rgba(221, 67, 43, 0.80);
   padding: 25px;
+}
+
+.NavigationBarWrapper {
   position: absolute;
+  background: #FFFFFF;
   top: 100px;
   left: 30px;
+  padding: 10px;
+}
+
+.SelectionBar {
+  padding: 10px;
+
 }
 
 .NavigationBarDetails {

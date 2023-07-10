@@ -11,7 +11,7 @@ const NavigationBar = () => {
     const router = useRouter()
 
     return (<>
-        <div className="NavigationBarWrapper">
+        <div className="NavigationBar">
             <div className="NavigationBarDetails">
                 <Typography sx={{fontSize: 17, fontWeight: 700, color: 'white'}}>John Doe</Typography>
                 <Typography sx={{fontSize: 12, fontWeight: 400, color: 'white'}}>jdoe1234@uni.sydney.edu.au</Typography>
