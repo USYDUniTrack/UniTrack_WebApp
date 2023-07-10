@@ -1,10 +1,7 @@
-import './globals.css'
-
 export default function Page() {
   return (
         <div>
-            <h2>Hello</h2>
+            <h2>Degree Planner in Progress</h2>
         </div>
   )
 }
-

@@ -10,7 +10,7 @@ export default function navBarLayout({children}) {
     <div className="App">
     <Header/>
       <div className='HomePageWrapper'>
-        <div className='leftNavigationWrapper'>
+        <div>
           <NavigationBar />
         </div>
         {children}
