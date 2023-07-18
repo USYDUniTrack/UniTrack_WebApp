@@ -4,7 +4,7 @@ import React from 'react'
 import {AppBar,IconButton, Toolbar, styled, Box, Typography} from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import Image from 'next/image';
-import {usyd_logo_h, usyd_logo_w} from "../assets.js"
+import {usyd_logo_h, usyd_logo_w} from "./assets.js"
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     alignItems: 'flex',
