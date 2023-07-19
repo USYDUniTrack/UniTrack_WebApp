@@ -80,6 +80,11 @@ body {
 /* NavigationBar css end */
 
 /* Home page css start */
+.HomePageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .headingContentWrapper{
   /* position: relative; */
 }
