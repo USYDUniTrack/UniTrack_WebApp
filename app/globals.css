@@ -9,7 +9,6 @@ body {
   background-color: #DBC3BF !important;
 }
 
-
 /* UnitDescription css start */
 
 .ContentDiv {
@@ -80,6 +79,18 @@ body {
 }
 /* NavigationBar css end */
 
+/* Home page css start */
+.headingContentWrapper{
+  /* position: relative; */
+}
+
+.bottomContentWrapper{
+  /* position: absolute; */
+  height: 100%;
+  background-color: #DD432B;
+}
+/* Home page css end */
+
 /* layout css start */
 
 .pageContentWithNavBar {
@@ -95,18 +106,20 @@ unitSearchContent {
 
 }
 
+
 .HomePageWrapper {
   /* width: 100%; */
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
-  margin: 15px;
+  /* margin: 15px; */
   /* display: block; */
   /* justify-content: center; */
   /* align-items: center; */
   /* flex-direction: row; */
   /* gap: 56px; */
 }
+
 
 .centerContentWrapper{
   max-width: 729px;
