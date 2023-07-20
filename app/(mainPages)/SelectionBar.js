@@ -10,7 +10,7 @@ const SelectionBar = () => {
             <Stack sx={{'margin-bottom': '5px'}} direction="row" alignItems="center" gap={1} justifyContent='flex-start'>
                 <TuneIcon />
                 <Typography sx={{ fontWeight: 'bold', fontSize: '20px' }}> Filters </Typography>
-                <div style={{'margin-left': '49px' }}>
+                <div style={{'margin-left': '41px' }}>
                     <Button sx={{fontSize: '15px', color: '#DD432B', fontWeight: 500, textTransform: 'none', width: '80px', height: '30px', justifyContent: 'center' }}> 
                         Clear All
                     </Button>
