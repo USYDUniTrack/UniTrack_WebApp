@@ -103,7 +103,7 @@ function BasicAccordion() {
           <Typography sx={{ fontWeight: 500, fontSize: 25 }}>What is a unit outline?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography sx={{ fontSize: 15 }}>
+          <div className="AccordionText">
             Unit outlines are a key source of information to help you understand what you will study, how you will learn and the way in which you’ll be assessed in a particular unit of study.<br/>
             The information in the outline can be used to help you plan your unit choices, organise your studies, apply for special consideration, set up academic plans and provide evidence of the topics you have studied.<br/>
             <br/>
@@ -129,7 +129,7 @@ function BasicAccordion() {
             </ul>
 
             You can find further information about available units and courses at Sydney University through <Link href="https://sydney.edu.au/courses/" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Sydney Courses</Link> or view <Link href="https://www.sydney.edu.au/handbooks/" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>our Online Handbooks</Link>.
-          </Typography>
+          </div>
         </AccordionDetails>
       </Accordion>
 
@@ -142,14 +142,14 @@ function BasicAccordion() {
           <Typography sx={{ fontWeight: 500, fontSize: 25  }}>Related Links</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography sx={{ fontSize: 15 }}>
+          <div className="AccordionText">
             <ul>
               <li><Link href="https://www.sydney.edu.au/students/handbooks-course-rules.html" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Handbook and course rules</Link></li>
               <li><Link href="https://www.sydney.edu.au/students/course-planning.html" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Planning your course</Link></li>
               <li><Link href="https://www.sydney.edu.au/students/enrol-in-a-new-course.html" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Enrol in a new course</Link></li>
               <li><Link href="https://www.sydney.edu.au/students/explore-open-learning-environment.html" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Explore the Open Learning Environment</Link></li>
             </ul>
-          </Typography>
+          </div>
         </AccordionDetails>
       </Accordion>
     </div>
