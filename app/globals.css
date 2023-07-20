@@ -115,7 +115,6 @@ body {
 .centerContentWrapper{
   max-width: 729px;
   position: absolute;
-  top: 120px;
 }
 
 .MuiButton-outlined {
