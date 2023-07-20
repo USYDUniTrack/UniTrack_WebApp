@@ -9,7 +9,7 @@ export default function Unit({params}) {
   return (
       <>
         <div className='centerContentWrapper'>
-          <h2>{params.unit}</h2>
+          {/* <h2>{params.unit}</h2> */}
           <UnitDescription />
           <Timetable />
           <UnitOutline />

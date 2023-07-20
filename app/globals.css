@@ -79,6 +79,7 @@ body {
 .HomePageWrapper {
   display: flex;
   flex-direction: column;
+  margin: 30px;
 }
 
 .headingContentWrapper{
@@ -99,8 +100,10 @@ body {
 /* layout css start */
 .pageContentWithNavBar {
   width: 100%;
-  display: flex; 
+  display: flex;
   justify-content: center;
+  position: absolute;
+  top: 120px;
 }
 
 .HomePageWrapper {
