@@ -48,7 +48,8 @@ body {
 }
 
 .SelectionBar {
-  padding-top: 20px;
+  margin-top: 11px;
+  padding: 4px;
 
 }
 
