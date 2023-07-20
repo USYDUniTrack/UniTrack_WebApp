@@ -94,7 +94,7 @@ const SearchBar = () => {
 function BasicAccordion() {
   return (
     <div>
-      <Accordion sx={{ maxWidth: 1000 }}>
+      <Accordion sx={{ maxWidth: 1000, marginBottom: 2 }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -144,10 +144,10 @@ function BasicAccordion() {
         <AccordionDetails>
           <Typography sx={{ fontSize: 15 }}>
             <ul>
-              <li><Link href="https://sydney.edu.au/courses/" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Handbook and course rules</Link></li>
-              <li><Link href="https://sydney.edu.au/courses/" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Planning your course</Link></li>
-              <li><Link href="https://sydney.edu.au/courses/" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Enrol in a new course</Link></li>
-              <li><Link href="https://sydney.edu.au/courses/" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Explore the Open Learning Environment</Link></li>
+              <li><Link href="https://www.sydney.edu.au/students/handbooks-course-rules.html" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Handbook and course rules</Link></li>
+              <li><Link href="https://www.sydney.edu.au/students/course-planning.html" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Planning your course</Link></li>
+              <li><Link href="https://www.sydney.edu.au/students/enrol-in-a-new-course.html" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Enrol in a new course</Link></li>
+              <li><Link href="https://www.sydney.edu.au/students/explore-open-learning-environment.html" sx={{ color: '#DD432B', textDecorationColor: '#DD432B' }}>Explore the Open Learning Environment</Link></li>
             </ul>
           </Typography>
         </AccordionDetails>
