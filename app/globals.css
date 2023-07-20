@@ -9,9 +9,7 @@ body {
   background-color: #DBC3BF !important;
 }
 
-
 /* UnitDescription css start */
-
 .ContentDiv {
 
 }
@@ -31,9 +29,8 @@ body {
   float: left;
   width: 100%;
   margin: 10.5px 0px;
-  marginBottom: 7px;
+  margin-bottom: 7px;
 }
-
 /* UnitDescription css end */
 
 /* NavigationBar css start */
@@ -48,8 +45,6 @@ body {
   padding: 0;
   position: static;
   width: 230px;
-  /* top: 0px; */
-  /* left: 0px; */
 }
 
 .SelectionBar {
@@ -69,7 +64,7 @@ body {
   gap: 3px;
   flex-direction: column;
   display: flex;
-  marginBottom: 18px;
+  margin-bottom: 18px;
 }
 
 .cardHrGap{
@@ -80,32 +75,38 @@ body {
 }
 /* NavigationBar css end */
 
-/* layout css start */
-
-.pageContentWithNavBar {
-  width: 100%;
+/* Home page css start */
+.HomePageWrapper {
   display: flex;
-  justify-content: center;
-  /* justify-content: flex-start; */
-
+  flex-direction: column;
 }
 
-unitSearchContent {
- 
+.headingContentWrapper{
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.bottomContentWrapper{
+  background-color: #DD432B;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+}
+/* Home page css end */
+
+/* layout css start */
+.pageContentWithNavBar {
+  width: 100%;
+  display: flex; 
+  justify-content: center;
 }
 
 .HomePageWrapper {
-  /* width: 100%; */
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
-  margin: 15px;
-  /* display: block; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-direction: row; */
-  /* gap: 56px; */
 }
 
 .centerContentWrapper{
@@ -131,3 +132,16 @@ unitSearchContent {
   align-items: flex-end;
   padding-right: 15px;
 }
+
+#standing {
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
+}
+
+#planner {
+  position: absolute;
+  top: 10vh;
+  left: 75vw;
+}
+/* layout css end */
