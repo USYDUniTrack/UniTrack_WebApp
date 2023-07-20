@@ -23,7 +23,7 @@ const Reviews = () => {
         <Link href="#" underline="hover" sx={{float: 'right', textAlign: 'right', color: 'black', marginTop: 3.5, marginRight: 1}}>See all reviews</Link>
         <Stack spacing={1}>
             <Box component="span" sx={{ p: 2, border: 1, borderRadius: '15px' }}>
-                <Typography component="legend" sx={{fontWeight: 700, fontSize: '15px'}}>Average workload rated by students:</Typography>
+                <Typography component="legend" sx={{fontWeight: 700, fontSize: '15px'}}>Workload</Typography>
                     <Rating
                         name="read-only"
                         value={5}
@@ -37,7 +37,7 @@ const Reviews = () => {
             </Box>
 
             <Box component="span" sx={{ p: 2, border: 1, borderRadius: '15px' }}>
-                <Typography component="legend" sx={{fontWeight: 700, fontSize: '15px'}}>Average workload rated by students:</Typography>
+                <Typography component="legend" sx={{fontWeight: 700, fontSize: '15px'}}>Workload</Typography>
                     <Rating
                         name="read-only"
                         value={5}
