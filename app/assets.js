@@ -1,2 +1,2 @@
-export const usyd_logo_h = 75
-export const usyd_logo_w = 130
+export const usyd_logo_h = 90
+export const usyd_logo_w = usyd_logo_h * 1.75
