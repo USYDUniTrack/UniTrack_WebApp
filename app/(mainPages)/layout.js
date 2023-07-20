@@ -1,8 +1,7 @@
+
 "use client";
 
 import Image from 'next/image'
-import './globals.css'
-import Header from './Header';
 import NavigationBar from './NavigationBar';
 import SelectionBar from './SelectionBar'
 // import Timetable from './Timetable';
@@ -15,17 +14,17 @@ export default function navBarLayout({children}) {
   const condition = pathname === "/units"
 
   return (
-    <div className="App">
-    <Header/>
-      <div className='HomePageWrapper'>
-        <div className='NavigationBarWrapper'>
-          <NavigationBar />
-          {condition ? <SelectionBar /> : <></>}
-            
-        </div>
-        {children}
-      </div>
-    </div>
+      <>
+          <div className='NavigationBarWrapper'>
+              <NavigationBar />
+              <div style={{}}>
+                  {condition ? <SelectionBar /> : <></>}
+              </div>
+          </div>
+          <div className="pageContentWithNavBar">
+              {children}
+          </div>
+      </>
   )
 }
 

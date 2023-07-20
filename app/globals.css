@@ -2,14 +2,17 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  margin: 0;
 }
 
 .bgColorCardHr{
   background-color: #DBC3BF !important;
 }
 
-
 /* UnitDescription css start */
+.ContentDiv {
+
+}
 
 .UnitDescriptionWrapper {
   width: 100%;
@@ -28,17 +31,26 @@ body {
   margin: 10.5px 0px;
   margin-bottom: 7px;
 }
-
 /* UnitDescription css end */
 
 /* NavigationBar css start */
-.NavigationBarWrapper {
+.NavigationBar {
   border-radius: 15px;
   background: rgba(221, 67, 43, 0.80);
   padding: 25px;
-  position: absolute;
-  top: 100px;
-  left: 30px;
+}
+
+.NavigationBarWrapper {
+  background: #FFFFFF;
+  padding: 0;
+  position: static;
+  width: 230px;
+}
+
+.SelectionBar {
+  margin-top: 11px;
+  padding: 4px;
+
 }
 
 .NavigationBarDetails {
@@ -64,15 +76,38 @@ body {
 }
 /* NavigationBar css end */
 
-/* layout css start */
+/* Home page css start */
+.HomePageWrapper {
+  display: flex;
+  flex-direction: column;
+}
 
-.HomePageWrapper{
-  width: 100%;
+.headingContentWrapper{
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottomContentWrapper{
+  background-color: #DD432B;
+  height: 40vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 56px;
+}
+/* Home page css end */
+
+/* layout css start */
+.pageContentWithNavBar {
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+}
+
+.HomePageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .centerContentWrapper{
@@ -98,3 +133,16 @@ body {
   align-items: flex-end;
   padding-right: 15px;
 }
+
+#standing {
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
+}
+
+#planner {
+  position: absolute;
+  top: 10vh;
+  left: 75vw;
+}
+/* layout css end */
