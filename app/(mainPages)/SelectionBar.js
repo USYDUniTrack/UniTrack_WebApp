@@ -16,7 +16,7 @@ const SelectionBar = () => {
                     </Button>
                 </div>
             </Stack>
-        <Divider sx={{'margin-bottom': '10px'}} color='white' sx={{ borderBottomWidth: 2 }}/>
+        <Divider sx={{ borderBottomWidth: 2, marginBottom: '10px', borderColor: 'white' }} />
         <Typography sx={{ fontWeight: 'bold', fontSize: '15px', color: 'rgba(0, 0, 0, 0.5)', 'margin-top': '10px'}}> Levels </Typography>
         <FormGroup>
             <FormControlLabel sx={{margin: '0px'}} control={<Checkbox style={{ width: "20px", "margin-right": '5px', padding: '3px'}}/>} label="1000" />
