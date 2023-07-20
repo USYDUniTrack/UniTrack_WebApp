@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Checkbox, Divider, FormGroup, FormControlLabel, Stack, Typography, Link, Box } from '@mui/material';
+import { Button, Checkbox, Divider, FormGroup, FormControlLabel, Stack, Typography } from '@mui/material';
 import TuneIcon from '@mui/icons-material/Tune';
 
 const SelectionBar = () => {
@@ -10,8 +10,8 @@ const SelectionBar = () => {
             <Stack sx={{'margin-bottom': '5px'}} direction="row" alignItems="center" gap={1} justifyContent='flex-start'>
                 <TuneIcon />
                 <Typography sx={{ fontWeight: 'bold', fontSize: '20px' }}> Filters </Typography>
-                <div style={{marginLeft: '41px', backgroundColor: 'rgba(221, 67, 43, 0.80)'}}>
-                    <Button sx={{fontSize: '15px', color: '#FFFFFF', fontWeight: 300, textTransform: 'none', width: '80px', height: '30px', justifyContent: 'center' }}> 
+                <div style={{'margin-left': '41px' }}>
+                    <Button sx={{fontSize: '15px', color: '#DD432B', fontWeight: 500, textTransform: 'none', width: '80px', height: '30px', justifyContent: 'center' }}> 
                         Clear All
                     </Button>
                 </div>
