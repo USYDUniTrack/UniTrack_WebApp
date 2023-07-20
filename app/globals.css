@@ -45,6 +45,8 @@ body {
   padding: 0;
   position: static;
   width: 230px;
+  margin-left: 25px;
+  margin: 25px;
 }
 
 .SelectionBar {
@@ -80,7 +82,6 @@ body {
 .HomePageWrapper {
   display: flex;
   flex-direction: column;
-  margin: 30px;
 }
 
 .headingContentWrapper{
@@ -116,7 +117,6 @@ body {
 .centerContentWrapper{
   max-width: 729px;
   position: absolute;
-  top: 120px;
 }
 
 .MuiButton-outlined {

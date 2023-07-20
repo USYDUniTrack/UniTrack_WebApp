@@ -5,7 +5,7 @@ import { Typography, Box, Grid, Button} from '@mui/material';
 
 const Timetable = () => {
     return(<>
-        <Typography sx={{ fontWeight: 700, fontSize: '20px' }}>Timetable</Typography>
+        <Typography sx={{ fontWeight: 700, fontSize: '20px', marginTop: 5 }}>Timetable</Typography>
         <hr className='BottomBorderLine' />
         <br />
         {/* Timetable heading */}

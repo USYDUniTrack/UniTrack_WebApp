@@ -6,7 +6,7 @@ import RectangleIcon from '@mui/icons-material/Rectangle';
 
 const Reviews = () => {
     return (<>
-        <Typography sx={{fontWeight: 700, fontSize: '20px'}}>Reviews</Typography>
+        <Typography sx={{fontWeight: 700, fontSize: '20px', marginTop: 5 }}>Reviews</Typography>
         <hr className='BottomBorderLine' />
         <div className="OverallReviews">
             <Typography component="legend" sx={{fontWeight: 700, fontSize: '15px'}}>Average workload rated by students:</Typography>
