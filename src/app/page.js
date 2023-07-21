@@ -5,7 +5,18 @@ import Image from 'next/image';
 import { BsFillCalendarEventFill, BsFillCalendar2Fill } from 'react-icons/bs';
 import { AiFillRead } from 'react-icons/ai';
 
-export default function page() {
+import getData from '@/firebase/firestore/getData';
+import { useState, useEffect } from 'react';
+
+export default function Page() {
+
+    useEffect(() => {
+        getData('users', 'usamant')
+            .then((data) => {
+                console.log(data.result._document.data.value.mapValue.fields);
+            })
+    }, [])
+
     return (
         <>
             <div className="headingContentWrapper">
