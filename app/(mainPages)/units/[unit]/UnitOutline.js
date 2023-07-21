@@ -6,7 +6,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 const UnitOutline = () => {
     return(<>
-        <Typography sx={{ fontWeight: 700, fontSize: '20px' }}>Unit Outline</Typography>
+        <Typography sx={{ fontWeight: 700, fontSize: '20px', marginTop: 5 }}>Unit Outline</Typography>
         <hr className='BottomBorderLine' />
         <Typography sx={{ marginBottom: 2 }}>Unit outlines will be available 2 weeks before the first day of teaching for the relevant session.</Typography>
         <Accordion sx={{ marginBottom: 2 }}>

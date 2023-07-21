@@ -5,7 +5,7 @@ export default function navBarLayout({children}) {
     <>
         {children}
         <div className='rightNavigationWrapper'>
-        <VerticalLinearStepper />
+        {/* <VerticalLinearStepper /> */}
         </div>
     </>
   )
