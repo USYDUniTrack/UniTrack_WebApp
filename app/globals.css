@@ -88,8 +88,9 @@ body {
 /* Home page css start */
 .HomePageWrapper {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin: 30px;
+  justify-content: flex-start;
 }
 
 .headingContentWrapper{
@@ -112,13 +113,12 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 120px;
+  position: static;
 }
 
 .HomePageWrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: stretch;
 }
 
