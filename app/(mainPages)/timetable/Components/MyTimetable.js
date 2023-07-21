@@ -4,16 +4,6 @@ import React from "react";
 import { Typography, Box, Grid, Button } from "@mui/material";
 
 const MyTimetable = () => {
-  // const timings = [
-  //     "8:00am",
-  //     "10:00am",
-  //     "12:00pm",
-  //     "14:00pm",
-  //     "16:00pm",
-  //     "18:00pm",
-  //     "20:00pm"
-  // ];
-
   return (
     <>
       <br />
