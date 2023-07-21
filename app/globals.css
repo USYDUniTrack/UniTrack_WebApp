@@ -226,7 +226,7 @@ body {
   margin-bottom: 8px;
 }
 
-.enrolUnits > .enrolUnitsButtons > div > .check{
+.enrolUnits > .enrolUnitsButtons > button > .check{
   padding-right: 14px;
   
 }
