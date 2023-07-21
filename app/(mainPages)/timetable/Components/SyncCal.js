@@ -1,9 +1,9 @@
-import React from 'react'
+// import React from 'react'
 
-const SyncCal = () => {
-  return (
-    <button>SyncCal</button>
-  )
-}
+// const SyncCal = () => {
+//   return (
+//     <button>SyncCal</button>
+//   )
+// }
 
-export default SyncCal
+// export default SyncCal
