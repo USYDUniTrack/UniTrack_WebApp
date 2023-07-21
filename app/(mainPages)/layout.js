@@ -9,7 +9,7 @@ import SelectionBar from './SelectionBar'
 
 import { usePathname } from "next/navigation"
 
-export default function navBarLayout({children}) {
+export default function NavBarLayout({children}) {
   const pathname = usePathname()
   const condition = pathname === "/units"
 
