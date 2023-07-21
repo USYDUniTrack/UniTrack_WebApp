@@ -38,12 +38,23 @@ body {
   border-radius: 15px;
   background: rgba(221, 67, 43, 0.80);
   padding: 25px;
+  position: static;
+
+}
+
+.AccordionText {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.00938em;
+    line-height: 1.5;
 }
 
 .NavigationBarWrapper {
   background: #FFFFFF;
   padding: 0;
-  position: static;
+  position: relative;
   width: 230px;
 }
 
@@ -79,7 +90,9 @@ body {
 /* Home page css start */
 .HomePageWrapper {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  padding: 40px;
+  justify-content: flex-start;
 }
 
 .headingContentWrapper{
@@ -100,20 +113,20 @@ body {
 /* layout css start */
 .pageContentWithNavBar {
   width: 100%;
-  display: flex; 
+  display: flex;
   justify-content: center;
+  position: static;
 }
 
 .HomePageWrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: stretch;
 }
 
 .centerContentWrapper{
   max-width: 729px;
   position: absolute;
-  top: 120px;
 }
 
 .MuiButton-outlined {
@@ -146,3 +159,96 @@ body {
   left: 75vw;
 }
 /* layout css end */
+/* Timetable timings column */
+
+.timeColumn{
+  margin: 0px;
+  padding: 80px 10px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeColumn > .timings {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 22px 0px 15px 0px;
+}
+
+
+/* Enrolment Component CSS */
+
+.enrolContent{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.enrolContent > h3 {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0px;
+  padding-bottom: 6px;
+}
+
+.enrolContent > p {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0px;
+  padding-bottom: 12px;
+  
+}
+
+.enrolUnits {
+
+}
+
+.enrolUnits > h5 {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+.enrolUnits > .enrolUnitsButtons {
+  border: none;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 15px;
+  margin-bottom: 8px;
+}
+
+.enrolUnits > .enrolUnitsButtons > button > .check{
+  padding-right: 14px;
+  
+}
+
+.enrolUnits > .enrolUnitsButtons > div > .arrow{
+  padding-left: 14px;
+}
+
+/* .enrolmentColumn {
+  /* padding: '0px';  */
+  /* margin: '0 0px';
+  background-color: '#D9D9D9';
+  height: '700px';
+  width: '238px';
+  border-radius: '5px';
+  padding: '20px';
+
+}*/ 
