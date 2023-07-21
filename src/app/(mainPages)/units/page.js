@@ -6,6 +6,16 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Accordion, AccordionSummary, AccordionDetails, Stack, TextField, Typography, Link, Box, Autocomplete, AutocompleteRenderInputParams, InputAdornment } from '@mui/material';
 
 export default function Page() {
+
+    // verify unit code
+    const verify = async () => {
+        const data = await getData('units', params.unit);
+        if (data.error) {
+            
+        }
+    }
+
+
   console.log("Coding Fest");
 
   return (

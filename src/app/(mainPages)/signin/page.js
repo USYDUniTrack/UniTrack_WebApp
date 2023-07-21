@@ -1,7 +1,8 @@
 'use client'
 import React from "react";
-import signIn from "src/firebase/auth/signin";
-import { useRouter } from 'next/navigation'
+import signIn from "@/firebase/auth/signin";
+import { useRouter } from 'next/navigation';
+import getData from '@/firebase/firestore/getData';
 
 function Page() {
     const [email, setEmail] = React.useState('')
@@ -21,6 +22,7 @@ function Page() {
         console.log(result)
         return router.push("/admin")
     }
+
     return (<div className="wrapper">
         <div className="form-wrapper">
             <h1 className="mt-60 mb-30">Sign up</h1>

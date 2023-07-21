@@ -6,6 +6,15 @@ import Timetable from './Timetable';
 // import Tree from './Tree';
 
 export default function Unit({params}) {
+
+    // verify unit code
+    const verify = async () => {
+        const data = await getData('units', params.unit);
+        if (data.error) {
+
+        }
+    }
+
   return (
       <>
         <div className='centerContentWrapper'>
