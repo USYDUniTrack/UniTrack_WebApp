@@ -88,11 +88,18 @@ body {
 /* NavigationBar css end */
 
 /* Home page css start */
-.HomePageWrapper {
+.PageContent {
   display: flex;
-  /* flex-direction: column; */
   padding: 40px;
   justify-content: flex-start;
+}
+
+.HomePageWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  justify-content: center;
+  width: 100%;
 }
 
 .headingContentWrapper{
@@ -116,12 +123,6 @@ body {
   display: flex;
   justify-content: center;
   position: static;
-}
-
-.HomePageWrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
 }
 
 .centerContentWrapper{

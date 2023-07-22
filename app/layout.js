@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
           <div className="Header">
               <Header/>
           </div>
-          <div className='HomePageWrapper'>
+          <div className='PageContent'>
               {children}
           </div>
         </div>

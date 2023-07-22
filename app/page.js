@@ -7,7 +7,7 @@ import { AiFillRead } from 'react-icons/ai';
 
 export default function page() {
     return (
-        <>
+        <div className="HomePageWrapper">
             <div className="headingContentWrapper">
                 <Typography sx={{ textAlign: "center", fontWeight: 700, fontSize: 80, marginTop: 10}}>Mapping your academic<br/>journey at USYD.</Typography>
                 <Typography sx={{ textAlign: "center", fontSize: 20, marginTop: 5 }}>Dummy text</Typography>
@@ -55,7 +55,7 @@ export default function page() {
                     </Card>
                 </Stack>
             </div>
-        </>
+        </div>
     )
     
 }

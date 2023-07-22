@@ -42,7 +42,7 @@ const SearchBar = () => {
               }
             }}
             id="Hello"
-            notched
+            notched="true"
             getOptionLabel={(jsonResults) => jsonResults.name}
             options={jsonResults}
             noOptionsText="No results"
