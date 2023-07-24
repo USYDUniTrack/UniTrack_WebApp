@@ -1,6 +1,6 @@
 "use client";
 
-import { Container, Stack, Card, CardContent, Typography, Button, Box } from '@mui/material';
+import { Container, Stack, Card, CardContent, Typography, Button, Box, GlobalStyles } from '@mui/material';
 import Image from 'next/image';
 import { BsFillCalendarEventFill, BsFillCalendar2Fill } from 'react-icons/bs';
 import { AiFillRead } from 'react-icons/ai';
@@ -12,7 +12,8 @@ export default function page() {
                 <Typography sx={{ textAlign: "center", fontWeight: 700, fontSize: 80, marginTop: 10}}>Mapping your academic<br/>journey at USYD.</Typography>
                 <Typography sx={{ textAlign: "center", fontSize: 20, marginTop: 5 }}>Dummy text</Typography>
                 <Box sx={{ display: "flex", justifyContent: "center"}}>
-                    <Button variant="contained" sx={{ marginTop: 5, marginBottom: 10, width: 180, backgroundColor: "#DD432B" }}>Sign In</Button>
+                    <Button variant="contained" sx={{ marginTop: 5, marginBottom: 10, width: 200, backgroundColor: "#DD432B", marginRight: 4 }}>Sign In</Button>
+                    <Button variant="outlined" sx={{ marginTop: 5, marginBottom: 10, width: 200 }}>Continue as guest</Button>
                 </Box>
                 <Image src="/Amigos_Standing.png" alt="Amigos Standing" id="standing" width={345} height={500}/>
                 <Image src="/Amigos_Planner.png" alt="Amigos Planner" id="planner" width={220} height={210}/>
