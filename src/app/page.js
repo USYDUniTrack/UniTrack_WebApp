@@ -13,7 +13,7 @@ export default function page() {
         <div className="HomePageWrapper">
             <div className="headingContentWrapper">
                 <Typography sx={{ textAlign: "center", fontWeight: 700, fontSize: 80, marginTop: 10}}>Mapping your academic<br/>journey at USYD.</Typography>
-                <Typography sx={{ textAlign: "center", fontSize: 20, marginTop: 5 }}>Dummy text</Typography>
+                <Typography sx={{ textAlign: "center", fontWeight: 700, fontSize: 25, marginTop: 2 }}>Navigating Success, One Course at a Time.</Typography>
                 <Box sx={{ display: "flex", justifyContent: "center"}}>
                     <Button variant="contained" sx={{ marginTop: 5, marginBottom: 10, width: 200, backgroundColor: "#DD432B", marginRight: 4 }} onClick={() => router.push('/signIn')}>Sign In</Button>
                     <Button variant="outlined" sx={{ marginTop: 5, marginBottom: 10, width: 200 }} onClick={() => router.push('/units')}>Continue as guest</Button>
@@ -25,7 +25,7 @@ export default function page() {
                 <Stack direction="row" spacing={10} alignItems="center">
                     <Stack direction="column">
                         <Typography sx={{ color: 'white', fontSize: 40, fontWeight: 700, width: 600 }}>Features</Typography>
-                        <Typography sx={{ color: 'white', fontSize: 20, width: 600 }}>Dummy text</Typography>
+                        <Typography sx={{ color: 'white', marginTop: 1, fontSize: 20, width: 600 }}>Start your academic adventure with confidence, armed with the right tools to make the most out of your time at USYD.</Typography>
                     </Stack>
 
                     <Card sx={{ width: 250, height: 265, borderRadius: 10, display: "flex", alignItems: "center" }}>
