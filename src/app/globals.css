@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.bgColorCardHr{
+  background-color: #DBC3BF !important;
+}
+
+/* UnitDescription css start */
+.ContentDiv {
+}
+
+.UnitDescriptionWrapper {
+  width: 100%;
+  max-width: 825px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.BottomBorderLine {
+  background: #00000080;
+  float: left;
+  width: 100%;
+  margin: 10.5px 0px;
+  margin-bottom: 7px;
+}
+/* UnitDescription css end */
+
+/* NavigationBar css start */
+.NavigationBar {
+  border-radius: 15px;
+  background: rgba(221, 67, 43, 0.80);
+  padding: 25px;
+  position: static;
+
+}
+
+
+.DegreePlannerWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.DegreePlannerSubScreen {
+    border-radius: 15px;
+    background: rgba(240, 238, 238, 1);
+    margin: 0px 20px 0px 20px;
+    /* width: 100%; */
+    padding: 15px;
+
+}
+
+.DegreePlannerItemSelect {
+    width: 300px;
+
+}
+
+.DegreeUnitsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+
+}
+
+.DegreeUnit {
+    display: flex;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    width: 187px;
+    height: 134px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.19);
+
+}
+
+.unitDot {
+    height: 10px;
+    width: 10px;
+    /* background-color: #BBBBBB; */
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+}
+
+.unitSemester {
+    border-radius: 10px;
+    background: #D9D9D9;
+    width: 50px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.AccordionText {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.00938em;
+    line-height: 1.5;
+}
+
+.NavigationBarWrapper {
+  background: #FFFFFF;
+  padding: 0;
+  position: relative;
+  width: 230px;}
+
+.SelectionBar {
+  margin-top: 11px;
+  padding: 4px;
+
+}
+
+.NavigationBarDetails {
+  padding: 4px;
+  color: #FFF;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+  text-align: left;
+  gap: 3px;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.cardHrGap{
+  margin: 23px 0px;
+}
+.widthCardHR{
+  width: 180px;
+}
+/* NavigationBar css end */
+
+/* Home page css start */
+.PageContent {
+  display: flex;
+  padding: 40px;
+  justify-content: flex-start;
+}
+
+.HomePageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.headingContentWrapper{
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottomContentWrapper{
+  background-color: #E46955;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  margin-left: -40px;
+  width: 100vw;
+}
+/* Home page css end */
+
+/* layout css start */
+.pageContentWithNavBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: static;
+}
+
+.centerContentWrapper{
+  max-width: 729px;
+  position: absolute;
+}
+
+.MuiButton-outlined {
+  border-color: #DD432B !important;
+  color: #DD432B !important;
+}
+
+.rightNavigationWrapper {
+  position: fixed;
+  top: 100px; /* Adjust the top value according to the height of your header */
+  right: 0;
+  width: 25%;
+  height: calc(100vh - 100px); /* Adjust the height value to consider the height of your header */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-right: 15px;
+}
+
+#standing {
+  position: absolute;
+  top: 25vh;
+  left: 8vw;
+}
+
+#standing2 {
+  position: absolute;
+  bottom: 0;
+  left: 5;
+}
+
+#planner {
+  position: absolute;
+  top: 10vh;
+  left: 80vw;
+}
+/* layout css end */
+
+/* Timetable timings column */
+
+.timeColumn{
+  margin: 0px;
+  padding: 80px 10px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeColumn > .timings {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 22px 0px 15px 0px;
+}
+
+
+/* Enrolment Component CSS */
+
+.enrolContent{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.enrolContent > h3 {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0px;
+  padding-bottom: 6px;
+}
+
+.enrolContent > p {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0px;
+  padding-bottom: 12px;
+  
+}
+
+.enrolUnits {
+
+}
+
+.enrolUnits > h5 {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+.enrolUnits > .enrolUnitsButtons {
+  border: none;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 15px;
+  margin-bottom: 8px;
+}
+
+.enrolUnits > .enrolUnitsButtons > button > .check{
+  padding-right: 14px;
+  
+}
+
+.enrolUnits > .enrolUnitsButtons > div > .arrow{
+  padding-left: 14px;
+}
+
+/* .enrolmentColumn {
+  /* padding: '0px';  */
+  /* margin: '0 0px';
+  background-color: '#D9D9D9';
+  height: '700px';
+  width: '238px';
+  border-radius: '5px';
+  padding: '20px';
+
+}*/ 
+
+/* .signInButton{
+  variant:"contained" 
+  display: flex;
+  width: 308px;
+  height: 45px;
+  padding: 8px 22px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+} */
