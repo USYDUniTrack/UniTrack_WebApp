@@ -108,7 +108,7 @@ body {
 }
 
 .bottomContentWrapper{
-  background-color: #DD432B;
+  background-color: #E46955;
   height: 40vh;
   display: flex;
   justify-content: center;
@@ -150,6 +150,12 @@ body {
   position: absolute;
   top: 25vh;
   left: 8vw;
+}
+
+#standing2 {
+  position: absolute;
+  bottom: 0;
+  left: 5;
 }
 
 #planner {
