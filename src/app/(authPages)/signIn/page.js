@@ -85,8 +85,13 @@ const SignIn = () => {
               /> */}
             <Box>
               <Button type="submit" variant="contained" sx={{ width: 300, backgroundColor: '#DD342B', marginBottom: 2 }}>Sign In</Button>
-              <Grid item xs>
-                <Link href="#" sx={{ fontSize: '15px', color: 'black', textDecorationColor: 'black' }}>Forgot password?</Link>
+              <Grid container direction="column" spacing={1}>
+                  <Grid item xs>
+                    <Link href="#" sx={{ fontSize: '15px', color: 'black', textDecorationColor: 'black' }}>Forgot password?</Link>
+                  </Grid>
+                  <Grid item xs>
+                    <Link href="/signUp" sx={{ fontSize: '15px', color: 'black', textDecorationColor: 'black' }}>Sign Up</Link>
+                  </Grid>
               </Grid>
             </Box>
           </Stack>

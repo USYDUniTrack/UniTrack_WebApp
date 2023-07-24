@@ -4,16 +4,19 @@ import { Container, Stack, Card, CardContent, Typography, Button, Box, GlobalSty
 import Image from 'next/image';
 import { BsFillCalendarEventFill, BsFillCalendar2Fill } from 'react-icons/bs';
 import { AiFillRead } from 'react-icons/ai';
+import { useRouter } from 'next/navigation'
 
 export default function page() {
+    const router = useRouter();
+
     return (
         <div className="HomePageWrapper">
             <div className="headingContentWrapper">
                 <Typography sx={{ textAlign: "center", fontWeight: 700, fontSize: 80, marginTop: 10}}>Mapping your academic<br/>journey at USYD.</Typography>
                 <Typography sx={{ textAlign: "center", fontSize: 20, marginTop: 5 }}>Dummy text</Typography>
                 <Box sx={{ display: "flex", justifyContent: "center"}}>
-                    <Button variant="contained" sx={{ marginTop: 5, marginBottom: 10, width: 200, backgroundColor: "#DD432B", marginRight: 4 }}>Sign In</Button>
-                    <Button variant="outlined" sx={{ marginTop: 5, marginBottom: 10, width: 200 }}>Continue as guest</Button>
+                    <Button variant="contained" sx={{ marginTop: 5, marginBottom: 10, width: 200, backgroundColor: "#DD432B", marginRight: 4 }} onClick={() => router.push('/signIn')}>Sign In</Button>
+                    <Button variant="outlined" sx={{ marginTop: 5, marginBottom: 10, width: 200 }} onClick={() => router.push('/units')}>Continue as guest</Button>
                 </Box>
                 <Image src="/Amigos_Standing.png" alt="Amigos Standing" id="standing" width={345} height={500}/>
                 <Image src="/Amigos_Planner.png" alt="Amigos Planner" id="planner" width={220} height={210}/>
