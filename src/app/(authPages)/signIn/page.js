@@ -1,29 +1,97 @@
 "use client"
 
-import { Container, Stack, Card, CardContent, Typography, Button, Box } from '@mui/material';
-import Image from 'next/image';
-import { BsFillCalendarEventFill, BsFillCalendar2Fill } from 'react-icons/bs';
-import { AiFillRead } from 'react-icons/ai';
 import React from 'react';
+import { Button, TextField, Typography, Checkbox, Link, Grid, Box, Container, InputLabel, Stack } from '@mui/material';
+import Image from 'next/image';
 
 export default function Page() {
   return (
-    <Box sx={{ display: 'flex' }}>
-      <div className="HomePageWrapper" style={{ flex: 1 }}>
-        <div className="headingContentWrapper">
-          <Typography sx={{ textAlign: 'center', fontWeight: 600, fontSize: 60, marginBottom: 30, marginLeft: 9, lineHeight: 1.2 }}>Mapping your <br />academic<br /> journey at <br />USYD.</Typography>
-          {/* <Typography sx={{ textAlign: "center", fontSize: 20, marginTop: 5 }}>Dummy text</Typography> */}
-          <Image src="/Amigos_Standing.png" alt="Amigos Standing" id="standing2" width={210} height={325} />
-        </div>
-      </div>
-      <Box sx={{ backgroundColor: '#DD432B', flex: 2, marginLeft: 10, width: 1210, height: 823 }}>
-        <Box sx={{ backgroundColor: '#FFF', flex: 1, marginLeft: 44, marginTop:15, width: 437, height: 603, flexShrink: 0, borderRadius: 5  }}>
-          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-          <Button variant="contained" sx={{ marginTop: 55, marginBottom: 10, width: 200, backgroundColor: "#DD432B" }}>Sign In</Button>
-          </Box>
+    <Stack direction="row">
+      <Box sx={{ width: '30vw' }}>
+        <Typography sx={{ textAlign: 'center', fontWeight: 600, fontSize: 60, marginTop: '150px', lineHeight: '80px' }}>Mapping your <br />academic<br /> journey at <br />USYD.</Typography>
+        <Image src="/Amigos_Standing.png" alt="Amigos Standing" id="standing2" width={210} height={325} />
+      </Box>
+      <Box
+        sx={{
+          backgroundColor: '#E46955',
+          width: '70vw',
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        <Box
+          sx={{
+            backgroundColor: '#FFF',
+            width: 437,
+            height: 603,
+            borderRadius: 5,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+        >
+          <SignIn />
         </Box>
       </Box>
-    </Box>
+    </Stack>
   )
+}
+
+const SignIn = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    console.log({
+      email: data.get('email'),
+      password: data.get('password'),
+    });
+  };
+
+  return (
+      <Container component="main" maxWidth="xs">
+        <Box component="form" onSubmit={handleSubmit} noValidate sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Stack direction="column" spacing={5}>
+            <Box>
+                <InputLabel htmlFor="unikey" sx={{ color: 'black', fontSize: '18px' }}>Username (unikey)</InputLabel>
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  id="unikey"
+                  label="Your unikey"
+                  name="unikey"
+                  autoComplete="unikey"
+                  autoFocus
+                />
+            </Box>
+            <Box>
+                <InputLabel htmlFor="password" sx={{ color: 'black', fontSize: '18px' }}>Password</InputLabel>
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  name="password"
+                  label="Your password"
+                  type="password"
+                  id="password"
+                  autoComplete="current-password"
+                />
+            </Box>
+              {/* <FormControlLabel
+                control={<Checkbox value="remember" color="primary" />}
+                label="Remember me"
+              /> */}
+            <Box>
+              <Button type="submit" variant="contained" sx={{ width: 300, backgroundColor: '#DD342B', marginBottom: 2 }}>Sign In</Button>
+              <Grid item xs>
+                <Link href="#" sx={{ fontSize: '15px', color: 'black', textDecorationColor: 'black' }}>Forgot password?</Link>
+              </Grid>
+            </Box>
+          </Stack>
+        </Box>
+      </Container>
+  );
 }
 

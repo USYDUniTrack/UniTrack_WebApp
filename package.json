@@ -15,6 +15,8 @@
     "@mui/material": "^5.13.7",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
+    "firebase": "^10.1.0",
+    "firebase-admin": "^11.10.1",
     "mui": "^0.0.1",
     "next": "13.4.9",
     "react": "18.2.0",
