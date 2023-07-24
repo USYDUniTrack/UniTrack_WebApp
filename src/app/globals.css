@@ -11,7 +11,6 @@ body {
 
 /* UnitDescription css start */
 .ContentDiv {
-
 }
 
 .UnitDescriptionWrapper {
@@ -90,14 +89,13 @@ body {
 /* Home page css start */
 .PageContent {
   display: flex;
-  padding: 40px;
+  /* padding: 40px; */
   justify-content: flex-start;
 }
 
 .HomePageWrapper {
   display: flex;
   flex-direction: column;
-  margin: 15px;
   justify-content: center;
   width: 100%;
 }
@@ -131,7 +129,7 @@ body {
 }
 
 .MuiButton-outlined {
-  border-color: black !important;
+  border-color: #DD432B !important;
   color: #DD432B !important;
 }
 
@@ -150,20 +148,14 @@ body {
 
 #standing {
   position: absolute;
-  top: 30vh;
-  left: 15vw;
-}
-
-#standing2 {
-  position: absolute;
-  top: 66vh;
-  left: 4vw;
+  top: 25vh;
+  left: 8vw;
 }
 
 #planner {
   position: absolute;
   top: 10vh;
-  left: 75vw;
+  left: 80vw;
 }
 /* layout css end */
 
