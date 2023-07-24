@@ -177,6 +177,8 @@ body {
   height: 40vh;
   display: flex;
   justify-content: center;
+  margin-left: -40px;
+  width: 100vw;
 }
 /* Home page css end */
 

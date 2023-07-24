@@ -1,10 +1,8 @@
 "use client";
 
 import Image from 'next/image'
-import NavigationBar from './NavigationBar';
-import SelectionBar from './SelectionBar'
-// import Timetable from './Timetable';
-// import Tree from './Tree';
+import NavigationBar from './Components/NavigationBar';
+import SelectionBar from './Components/SelectionBar'
 import SyncCal from './Components/SyncCal';
 
 import { usePathname } from "next/navigation"
