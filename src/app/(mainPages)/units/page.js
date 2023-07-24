@@ -22,16 +22,16 @@ export default function Page() {
     )
 }
 
-// verify unit code
+// get all units from firestore
 const getUnits = async () => {
     const res = await getData('units', 'all');
     if (res.error) {
         console.log('something went wrong');
     }
     else {
-        console.log('Got the data\n' + res.result);
+        console.log('inside getUnits\n' + res.list);
     }
-    return res.result
+    return res.list
 }
 
 
@@ -40,11 +40,14 @@ const SearchBar = () => {
 
     useEffect(() => {
         const units = getUnits();
-        console.log(units);
+        units.then((res) => {
+            console.log("inside useEffect " + res[0].code);
+            setJsonResults(res);
+        });
         // setJsonResults(units);
-        fetch(`https://jsonplaceholder.typicode.com/users`)
-            .then((res) => res.json())
-            .then((json) => setJsonResults(json));
+        // fetch(`https://jsonplaceholder.typicode.com/users`)
+        //     .then((res) => res.json())
+        //     .then((json) => setJsonResults(json));
     }, []);
 
     return (
@@ -60,16 +63,18 @@ const SearchBar = () => {
         }}
         id="Hello"
         notched="true"
-        getOptionLabel={(jsonResults) => jsonResults.name}
+        getOptionLabel={(jsonResults) => jsonResults.code}
         options={jsonResults}
         noOptionsText="No results"
         isOptionEqualToValue={(option, value) => {
-            option.name === value.name;
+            option.code.toUpperCase() === value.code;
         }}
         renderOption={(props, jsonResults) => (
-            <Box component="li" {...props} key={jsonResults.id}>
-            {jsonResults.name} - Ahhh
+            <Link href={`/units/${jsonResults.code.toLowerCase()}`}>
+            <Box component="li" {...props} key={jsonResults.code}>
+            {jsonResults.code} - {jsonResults.name}
             </Box>
+            </Link>
         )}
         renderInput={(params) => (
             <TextField

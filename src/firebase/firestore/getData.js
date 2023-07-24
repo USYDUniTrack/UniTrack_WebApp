@@ -26,6 +26,7 @@ export default async function getData(collection_str, id) {
 
         const list = snapshotToArray(result);
         // console.log(list[0]);
+        console.log("inside getData " + result);
 
         return { list, error };
     }

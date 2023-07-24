@@ -2,8 +2,22 @@
 
 import { Typography, Link } from '@mui/material';
 import React from 'react';
+import getData from '@/src/firebase/firestore/getData';
+import snapshotToArray from '@/src/firebase/firestore/snapshotToArray';
 
-const UnitDescription = () => {
+const UnitDescription = (props) => {
+
+    const getUnits = async () => {
+        const res = await getData('units', 'all');
+        if (res.error) {
+            console.log('something went wrong');
+        }
+        else {
+            console.log('inside getUnits\n' + res.list);
+        }
+        return res.list
+    }
+
     return (<>
         <Typography sx={{ color: '#DD432B', fontSize: 25, fontWeight: 700 }}>COMP2017: Systems Programming</Typography>
         <Typography sx={{ fontSize: 15 }}>Computer Science | 6 credit points</Typography>
