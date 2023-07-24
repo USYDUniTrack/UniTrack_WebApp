@@ -1,20 +1,49 @@
 import firebase_app from "../config";
-import { getFirestore, doc, getDoc } from "firebase/firestore";
+import { getFirestore, doc, getDoc, getDocs, collection } from "firebase/firestore";
+import snapshotToArray from '@/src/firebase/firestore/snapshotToArray';
 
 const db = getFirestore(firebase_app)
-export default async function getData(collection, id) {
-    let docRef = doc(db, collection, id);
+export default async function getData(collection_str, id) {
 
-    let result = null;
-    let error = null;
+    if (id === 'all') {
+        const colRef = collection(db, collection_str);
 
-    try {
-        result = await getDoc(docRef);
-    } catch (e) {
-        error = e;
+        let result = null;
+        let error = null;
+
+        try {
+            result = await getDocs(colRef);
+        } catch (e) {
+            error = e;
+            return { result, error };
+        }
+
+        // console.log(Object.keys(result));
+        // result.forEach((doc) => {
+        //     // doc.data() is never undefined for query doc snapshots
+        //     console.log(doc.id, " => ", doc.data());
+        // });
+
+        const list = snapshotToArray(result);
+        // console.log(list[0]);
+
+        return { list, error };
     }
+    else {
 
-    console.log(result)
+        const docRef = doc(db, collection_str, id);
 
-    return { result, error };
+        let result = null;
+        let error = null;
+
+        try {
+            result = await getDoc(docRef);
+        } catch (e) {
+            error = e;
+        }
+
+        console.log(Object.keys(result));
+
+        return { result, error };
+    }
 }
