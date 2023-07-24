@@ -5,6 +5,9 @@ import { Box, Button } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { Edit } from '@mui/icons-material';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import Preferences from './Preferences.js'
 
 const Enrolment = () => {
     return (
@@ -25,10 +28,20 @@ const Enrolment = () => {
 
             <div className='enrolUnits'>
                 <h5 className='COMP2222'> COMP2222 </h5>
-                <Button variant="contained" sx={{ backgroundColor: 'white', color: 'black', textTransform: 'none', fontSize: '17px', width: 240, justifyContent: 'space-between', marginBottom: '10px' }}>
-                    <Box sx={{ display: 'flex', alignItems: 'center'}}><CheckCircleIcon sx={{ color: '#8CC159', marginRight: 2}}/> Lec </Box>
-                    <EditIcon sx={{ fontSize: '20px', color: '#666666'}}/>
-                </Button>
+              <Popup 
+                modal
+                className="my-popup"
+                trigger={
+                  <Button variant="contained" sx={{ backgroundColor: 'white', color: 'black', textTransform: 'none', fontSize: '17px', width: 240, justifyContent: 'space-between', marginBottom: '10px' }}>
+                  <Box sx={{ display: 'flex', alignItems: 'center'}}><CheckCircleIcon sx={{ color: '#8CC159', marginRight: 2}}/> Lec </Box>
+                  <EditIcon sx={{ fontSize: '20px', color: '#666666'}}/>
+                  </Button>
+
+                } 
+                position="right center"> 
+                <Preferences />
+
+             </Popup>
                 <Button variant="contained" sx={{ backgroundColor: 'white', color: 'black', textTransform: 'none', fontSize: '17px', width: 240, justifyContent: 'space-between' }}>
                     <Box sx={{ display: 'flex', alignItems: 'center'}}><CheckCircleIcon sx={{ color: '#8CC159', marginRight: 2}}/> Prac </Box>
                     <EditIcon sx={{ fontSize: '20px', color: '#666666'}}/>

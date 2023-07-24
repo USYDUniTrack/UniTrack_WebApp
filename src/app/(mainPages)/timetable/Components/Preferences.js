@@ -8,7 +8,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Preferences = () => {
     return (<>
-        <Stack direction="row" spacing={3} sx={{  backgroundColor: "#F0EEEE", width: 810, paddingBottom: 4, borderRadius: 10, justifyContent: 'center', paddingTop: 4 }}>
+        <Stack direction="row" spacing={3} sx={{  width: "100%", backgroundColor: "#F0EEEE", paddingBottom: 4, borderRadius: 10, justifyContent: 'center', paddingTop: 4 }}>
           {/* Left part */}
           <Stack direction="column" spacing={4}>
             <div className='prefHeader'>

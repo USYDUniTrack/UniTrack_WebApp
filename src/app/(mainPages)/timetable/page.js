@@ -1,7 +1,6 @@
 import React from 'react';
 import MyTimetable from './Components/MyTimetable.js'; 
 import Enrolment from './Components/Enrolment.js'
-import Preferences from './Components/Preferences.js'
 // import SyncCal from './Components/SyncCal.js';
 
 export default function Page() {
@@ -30,7 +29,6 @@ export default function Page() {
             </div>
             <MyTimetable /> 
           </div>
-          <Preferences />
         </div>
 
         {/* Right Wrapper */}
