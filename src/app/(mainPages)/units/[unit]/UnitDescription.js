@@ -1,22 +1,42 @@
 "use client";
 
 import { Typography, Link } from '@mui/material';
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import getData from '@/src/firebase/firestore/getData';
 import snapshotToArray from '@/src/firebase/firestore/snapshotToArray';
 
+const getUnitData = async (unitCode) => {
+    const res = await getData('units', unitCode);
+    if (res.error) {
+        console.log('something went wrong');
+    }
+    else {
+        console.log('inside getUnitData\n' + res.result);
+    }
+    return res.result
+}
+
 const UnitDescription = (props) => {
 
-    const getUnits = async () => {
-        const res = await getData('units', 'all');
-        if (res.error) {
-            console.log('something went wrong');
-        }
-        else {
-            console.log('inside getUnits\n' + res.list);
-        }
-        return res.list
-    }
+
+    const [jsonResults, setJsonResults] = useState([]);
+
+    useEffect(() => {
+        console.log(props.unit[0]);
+        const unitData = getUnitData(props.unit[0]);
+        unitData.then((res) => {
+            console.log("inside useEffect in description " + res.code);
+            setJsonResults(res);
+        });
+    }, [props.unit]);
+
+
+    // let unitData;
+    // getUnitData()
+    //     .then((res) => {
+    //         unitData = res;
+    //     });
+
 
     return (<>
         <Typography sx={{ color: '#DD432B', fontSize: 25, fontWeight: 700 }}>COMP2017: Systems Programming</Typography>
