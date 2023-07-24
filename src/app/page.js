@@ -6,7 +6,7 @@ import { BsFillCalendarEventFill, BsFillCalendar2Fill } from 'react-icons/bs';
 import { AiFillRead } from 'react-icons/ai';
 import { useRouter } from 'next/navigation'
 
-export default function page() {
+export default function Page() {
     const router = useRouter();
 
     return (

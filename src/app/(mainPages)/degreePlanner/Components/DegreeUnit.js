@@ -25,7 +25,7 @@ const DegreeUnit = ({unitInfo}) => {
                 <div style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
                     {unitInfo.semesters.map((semester) => {
                         return (
-                            <div className="unitSemester"> 
+                            <div key={semester} className="unitSemester"> 
                                 <Typography sx={{ fontWeight: 400, fontSize: 12 }}> Sem {semester} </Typography>
                             </div>
                         )
