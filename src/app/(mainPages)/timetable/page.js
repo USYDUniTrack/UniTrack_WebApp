@@ -1,6 +1,8 @@
 import React from 'react';
 import MyTimetable from './Components/MyTimetable.js'; 
 import Enrolment from './Components/Enrolment.js'
+import Preferences from './Components/Preferences.js'
+import SyncCal from './Components/SyncCal.js';
 //import SyncCal from '/Users/devanshimirchandani/Desktop/UniTrack_WebApp/app/(mainPages)/timetable/Components/SyncCal.js'
 
 export default function Page() {
@@ -16,26 +18,28 @@ export default function Page() {
 
   return (
     <div>
-      <div style={{ display: 'flex', margin:20 }}>
+      <div style={{ display: 'flex' }}>
         
         {/* Left Wrapper */}
-        <div style={{ flex: 1 }}>
-          {/* <SyncCal /> */}
+        <div>
+          <SyncCal />
         </div>
 
         {/* Center Wrapper */}
-        <div style={{ flex: 2, display: 'flex' }}>
-          <div className='timeColumn'>
-            {timings.map((timing)=>{
-              return (<h3 className='timings' key={timing}> {timing}</h3 >)
-            })}
-
+        <div style={{ display: 'column', scale: 1.05, transformOrigin: 'top left' }}>
+          <div style={{ display: 'flex', width: 810 }}>
+            <div className='timeColumn' style={{ marginRight: 10}}>
+              {timings.map((timing)=>{
+                return (<h3 className='timings' key={timing}> {timing}</h3 >)
+              })}
+            </div>
+            <MyTimetable /> 
           </div>
-          <MyTimetable /> 
+          <Preferences />
         </div>
 
         {/* Right Wrapper */}
-        <div style={{ marginLeft: 150}}>
+        <div style={{ position: 'relative', left: 220}}>
           <Enrolment />
         </div>
       </div>
