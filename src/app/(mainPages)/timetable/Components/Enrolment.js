@@ -8,7 +8,6 @@ const Enrolment = () => {
 
         <Box className='enrolmentColumn'
             sx={{
-                margin: '0 0px',
                 backgroundColor: '#F0EEEE',
                 height: '700px',
                 width: '238px',
