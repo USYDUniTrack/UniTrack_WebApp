@@ -26,7 +26,7 @@ export default async function getData(collection_str, id) {
 
         const list = snapshotToArray(result);
         // console.log(list[0]);
-        console.log("inside getData " + result);
+        // console.log("inside getData " + result);
 
         return { list, error };
     }
@@ -43,7 +43,7 @@ export default async function getData(collection_str, id) {
             error = e;
         }
 
-        console.log(Object.keys(result));
+        // console.log(Object.keys(result));
 
         return { result, error };
     }

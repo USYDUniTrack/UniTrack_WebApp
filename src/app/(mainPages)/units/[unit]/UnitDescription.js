@@ -18,38 +18,43 @@ const getUnitData = async (unitCode) => {
 
 const UnitDescription = (props) => {
 
-
     const [jsonResults, setJsonResults] = useState([]);
 
     useEffect(() => {
         console.log(props.unit[0]);
         const unitData = getUnitData(props.unit[0]);
         unitData.then((res) => {
-            console.log("inside useEffect in description " + res.code);
-            setJsonResults(res);
+            console.log("inside useEffect in description " + res.data().code);
+            setJsonResults(res.data());
         });
     }, [props.unit]);
 
-
-    // let unitData;
-    // getUnitData()
-    //     .then((res) => {
-    //         unitData = res;
-    //     });
+    let prohibition_str = "";
+    if (jsonResults.prohibitions) {
+        // console.log(Object.keys(jsonResults.prohibitions).length);
+        let i = 0;
+        for (i = 0; i < jsonResults.prohibitions.length - 1; i++) {
+            prohibition_str = prohibition_str.concat(jsonResults.prohibitions[i], " | ");
+        }
+        prohibition_str = prohibition_str.concat(jsonResults.prohibitions[i]);
+    }
 
 
     return (<>
-        <Typography sx={{ color: '#DD432B', fontSize: 25, fontWeight: 700 }}>COMP2017: Systems Programming</Typography>
+        <Typography sx={{ color: '#DD432B', fontSize: 25, fontWeight: 700 }}>{jsonResults.code}: {jsonResults.name}</Typography>
         <Typography sx={{ fontSize: 15 }}>Computer Science | 6 credit points</Typography>
         <Typography sx={{ fontSize: 15, fontWeight: 700, marginTop: 0.5 }}>Semester 1</Typography>
         <hr className='BottomBorderLine' />
         <Typography sx={{ marginBottom: 2 }}>
-            In this unit of study, elementary methods for developing robust, efficient, and re-usable software will be covered. The unit is taught in C, in a Unix environment. Specific coding topics include memory management, the pragmatic aspects of implementing data structures such as lists and hash tables and managing concurrent threads. Debugging tools and techniques are discussed and common programming errors are considered along with defensive programming techniques to avoid such errors. Emphasis is placed on using common Unix tools to manage aspects of the software construction process, such as version control and regression testing. The subject is taught from a practical viewpoint and it includes a considerable amount of programming practice.
+            {jsonResults.overview}
         </Typography>
-        <Typography className='UnitDescriptionNotes' sx={{ fontWeight: 700 }}>
-            Prohibitions: <Link href="https://cusp.sydney.edu.au/students/view-unit-page/uos_id/122888" sx={{ color: '#DD432B', fontWeight: 700 }} underline='hover'>COMP2129</Link>
-            &nbsp;or <Link href="https://www.sydney.edu.au/units/COMP9017" sx={{ color: '#DD432B', fontWeight: 700 }} underline='hover'>COMP9017</Link>
-            &nbsp;or <Link href="https://cusp.sydney.edu.au/students/view-unit-page/alpha/COMP9129" sx={{ color: '#DD432B', fontWeight: 700 }} underline='hover'>COMP9129</Link>
+        <Typography className='UnitDescriptionNotes' sx={{ color: '#DD432B', fontWeight: 700 }}>
+        {
+            // Prohibitions: <Link href="https://cusp.sydney.edu.au/students/view-unit-page/uos_id/122888" sx={{ color: '#DD432B', fontWeight: 700 }} underline='hover'>COMP2129</Link>
+            // &nbsp;or <Link href="https://www.sydney.edu.au/units/COMP9017" sx={{ color: '#DD432B', fontWeight: 700 }} underline='hover'>COMP9017</Link>
+            // &nbsp;or <Link href="https://cusp.sydney.edu.au/students/view-unit-page/alpha/COMP9129" sx={{ color: '#DD432B', fontWeight: 700 }} underline='hover'>COMP9129</Link>
+            prohibition_str
+        }
         </Typography>
         <br />
     </>)
