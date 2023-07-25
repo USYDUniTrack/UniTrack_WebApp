@@ -56,7 +56,7 @@ const SearchBar = () => {
         componentsProps={{
             paper: {
                 sx: {
-                    width: 350,
+                    width: 950,
                         margin: "auto"
                 }
             }
