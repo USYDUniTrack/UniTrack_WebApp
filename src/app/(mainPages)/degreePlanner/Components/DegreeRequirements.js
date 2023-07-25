@@ -2,6 +2,7 @@ import { Accordion, AccordionDetails, AccordionSummary, LinearProgress, Typograp
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DoneAllIcon from '@mui/icons-material/DoneAll';
 import CancelIcon from '@mui/icons-material/Cancel';
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const DegreeRequirements = ({completionInfo, degreeRequirements}) => {
     console.log(degreeRequirements)
@@ -33,11 +34,11 @@ const DegreeRequirements = ({completionInfo, degreeRequirements}) => {
                         <div style={{ padding: "5px", display: "flex", flexDirection: "column", maxHeight: "200px", overflow: "scroll"}}>
                             <div style={{ marginBottom: "5px",display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center"}}>
                                 <Typography sx={{ fontWeight: 400, fontSize: 14  }}>1000 Level Core</Typography>
-                                <DoneAllIcon />
+                                <CheckCircleIcon />
                             </div>
                             <div style={{ marginBottom: "5px",display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center"}}>
                                 <Typography sx={{ fontWeight: 400, fontSize: 14  }}>2000 Level Core</Typography>
-                                <DoneAllIcon />
+                                <CheckCircleIcon />
                             </div>
                             <div style={{ marginBottom: "5px",display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center"}}>
                                 <Typography sx={{ fontWeight: 400, fontSize: 14  }}>3000 Level Core</Typography>
